@@ -1,0 +1,35 @@
+@import "reset.css";
+
+body {
+  /* margin: 0 500px; */
+}
+div.test {width: 100%;}
+div.test > nav {height: 120px;background-color: #4676ff;display: flex;justify-content: space-between;align-items: center;}
+div.test > nav > ul {margin: 0 auto; max-width: 1300px;}
+div.test > nav > ul > a > img {width: 150px;}
+/* div.test > nav > ul > a > li {width: 100px;} */
+nav ul {
+  /* width: 45%; */
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+/* desktop 규격 */
+@media screen and (min-width: 1024px) {
+  body {
+
+  }
+}
+
+/* tablet 규격 */
+@media screen and (max-width: 1023px) {
+  div.test > nav > ul {padding: 0 15px;}
+}
+
+/* mobile 규격 */
+@media screen and (max-width: 540px) {
+  div.test > nav > ul {padding: 0 15px;}
+}
