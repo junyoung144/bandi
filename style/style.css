@@ -1,35 +1,33 @@
 @import "reset.css";
+@import "container.css";
 
-body {
-  /* margin: 0 500px; */
-}
-div.test {width: 100%;}
-div.test > nav {height: 120px;background-color: #4676ff;display: flex;justify-content: space-between;align-items: center;}
-div.test > nav > ul {margin: 0 auto; max-width: 1300px;}
-div.test > nav > ul > a > img {width: 150px;}
-/* div.test > nav > ul > a > li {width: 100px;} */
-nav ul {
-  /* width: 45%; */
-  display: flex;
-  justify-content: space-between;
-}
+header.header_nav {width: 100%;}
+nav.header_nav_box {width: 100%;display: flex;justify-content: space-between;align-items: center;}
+nav.header_nav_box > div.header_left_img {width: 120px; height: 100px;display: flex;align-items: center;}
 
-
-
-
-/* desktop 규격 */
-@media screen and (min-width: 1024px) {
-  body {
-
-  }
-}
-
-/* tablet 규격 */
-@media screen and (max-width: 1023px) {
-  div.test > nav > ul {padding: 0 15px;}
-}
-
-/* mobile 규격 */
-@media screen and (max-width: 540px) {
-  div.test > nav > ul {padding: 0 15px;}
-}
+/* GNB 호버 시 */
+nav.header_nav_box > div.header_center_list {width: 50%; height: 100px;display: flex;align-items: center;}
+nav.header_nav_box > div.header_center_list > ul.header_center_list_ul {width: 100%;display: flex;justify-content: space-between;color: #000;}
+nav.header_nav_box > div.header_center_list > ul.header_center_list_ul > li > a {color: #000;}
+nav.header_nav_box > div.header_center_list > nav > ul {display: flex;position: relative;}
+nav.header_nav_box > div.header_center_list > nav > ul li {width: 150px;text-align: center;height: 99px;line-height: 99px;font-weight: 400;}
+nav.header_nav_box > div.header_center_list > nav ul a {display: block;color: #fff;font-size: 14px;font-weight: 400;}
+nav.header_nav_box > div.header_center_list > nav > ul > li.on > a,header nav > ul > li:hover > a {font-weight: bold;color: #000000;transition: all 0.3s ease;}
+nav.header_nav_box > div.header_center_list > nav ul.depth_2 {height: 0;position: absolute;z-index: 5;overflow: hidden;transition: all 0.4s ease;}
+nav.header_nav_box > div.header_center_list > nav ul.depth_2 li {width: 140px;height: 80px;line-height: 80px;border: 1px solid #efefef;margin-bottom: -1px;background-color: #fff;}
+nav.header_nav_box > div.header_center_list > nav ul.depth_2 li:first-child {border-radius: 12px 12px 0 0;margin-top: 12px;}
+nav.header_nav_box > div.header_center_list > nav ul.depth_2 li:last-child {border-radius: 0 0 12px 12px;}
+nav.header_nav_box > div.header_center_list > nav ul li:hover > .depth_2 {height: 1000px;}
+nav.header_nav_box > div.header_center_list > nav ul.depth_2 li> a {color: #000;}
+nav.header_nav_box > div.header_center_list > nav ul.depth_2 li:hover > a {color: #000000;font-weight: 400;text-decoration: underline;text-underline-position: under;}
+nav.header_nav_box > div.header_center_list > nav > ul {display: flex;}
+nav.header_nav_box > div.header_center_list > nav > ul li {width: 150px;text-align: center;height: 99px;line-height: 99px;font-weight: 400;}
+nav.header_nav_box > div.header_center_list > nav ul a {display: block;color: #000;font-size: 14px;font-weight: 400;}
+nav.header_nav_box > div.header_center_list > nav > ul > li.on > a,header nav > ul > li:hover > a {font-weight: bold;color: #000000;;transition: all 0.3s ease;}
+nav.header_nav_box > div.header_center_list > nav ul.depth_3 {height: 0;position: absolute;z-index: 5;overflow: hidden;transition: all 0.4s ease;}
+nav.header_nav_box > div.header_center_list > nav ul.depth_3 li {width: 140px;height: 56px;line-height: 56px;border: 1px solid #efefef;margin-bottom: -1px;background-color: #fff;}
+nav.header_nav_box > div.header_center_list > nav ul.depth_3 li:first-child {border-radius: 12px 12px 0 0;margin-top: 12px;}
+nav.header_nav_box > div.header_center_list > nav ul.depth_3 li:last-child {border-radius: 0 0 12px 12px;}
+nav.header_nav_box > div.header_center_list > nav ul li:hover > .depth_3 {height: 1000px;}
+nav.header_nav_box > div.header_center_list > nav ul.depth_3 li> a {color: #000;}
+nav.header_nav_box > div.header_center_list > nav ul.depth_3 li:hover > a {color: #000000;font-weight: 400;text-decoration: underline;text-underline-position: under;}
